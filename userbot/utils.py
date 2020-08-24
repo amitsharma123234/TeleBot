@@ -164,7 +164,7 @@ def admin_cmd(pattern=None, **args):
             args["pattern"] = re.compile(pattern)
         else:
             args["pattern"] = re.compile(Config.CMD_HNDLR + pattern)
-            cmd = "." + pattern
+            cmd = Config.CMD_HNDLR + pattern
             try:
                 CMD_LIST[file_test].append(cmd)
             except:
