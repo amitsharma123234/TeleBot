@@ -55,6 +55,8 @@ if bool(ENV):
             "Please remove the line mentioned in the first hashtag from the config.env file"
         )
         quit(1)
+    # Command Handler
+    CMD_HNDLR = os.environ.get("CMD_HNDLR", None)
 
     # Logging channel/group configuration.
     BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID", None)
