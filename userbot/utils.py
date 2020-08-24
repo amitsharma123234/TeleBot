@@ -1,3 +1,11 @@
+import datetime
+import traceback
+import sys
+import subprocess
+import math
+from time import gmtime, strftime
+from traceback import format_exc
+import asyncio
 from userbot import bot
 from telethon import events
 from var import Var
@@ -8,6 +16,7 @@ from userbot import CMD_LIST
 import re
 import logging
 import inspect
+
 
 def command(**args):
     args["func"] = lambda e: e.via_bot_id is None
@@ -38,7 +47,8 @@ def command(**args):
             try:
                 cmd = re.search(reg, pattern)
                 try:
-                    cmd = cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
+                    cmd = cmd.group(1).replace("$", "").replace(
+                        "\\", "").replace("^", "")
                 except:
                     pass
 
@@ -111,6 +121,7 @@ def load_module(shortname):
         sys.modules["userbot.plugins."+shortname] = mod
         print("Successfully (re)imported "+shortname)
 
+
 def remove_plugin(shortname):
     try:
         try:
@@ -127,6 +138,7 @@ def remove_plugin(shortname):
                     del bot._event_builders[i]
     except:
         raise ValueError
+
 
 def admin_cmd(pattern=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
@@ -173,16 +185,9 @@ def admin_cmd(pattern=None, **args):
 
     return events.NewMessage(**args)
 
+
 """ Userbot module for managing events.
  One of the main components of the userbot. """
-import asyncio
-from traceback import format_exc
-from time import gmtime, strftime
-import math
-import subprocess
-import sys
-import traceback
-import datetime
 
 
 def register(**args):
@@ -201,13 +206,14 @@ def register(**args):
 
     if "disable_edited" in args:
         del args['disable_edited']
-    
+
     reg = re.compile('(.*)')
     if not pattern == None:
         try:
             cmd = re.search(reg, pattern)
             try:
-                cmd = cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
+                cmd = cmd.group(1).replace("$", "").replace(
+                    "\\", "").replace("^", "")
             except:
                 pass
 
@@ -239,6 +245,7 @@ def errors_handler(func):
         except Exception:
             pass
     return wrapper
+
 
 async def progress(current, total, event, start, type_of_ps, file_name=None):
     """Generic progress_callback for both
@@ -297,6 +304,7 @@ def time_formatter(milliseconds: int) -> str:
         ((str(seconds) + " second(s), ") if seconds else "") + \
         ((str(milliseconds) + " millisecond(s), ") if milliseconds else "")
     return tmp[:-2]
+
 
 class Loader():
     def __init__(self, func=None, **args):
