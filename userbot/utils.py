@@ -1,21 +1,21 @@
+import asyncio
 import datetime
-import traceback
-import sys
-import subprocess
+import inspect
+import logging
 import math
+import re
+import subprocess
+import sys
+import traceback
+from pathlib import Path
 from time import gmtime, strftime
 from traceback import format_exc
-import asyncio
-from userbot import bot
+
 from telethon import events
-from var import Var
-from pathlib import Path
+
+from userbot import CMD_LIST, LOAD_PLUG, bot
 from userbot.uniborgConfig import Config
-from userbot import LOAD_PLUG
-from userbot import CMD_LIST
-import re
-import logging
-import inspect
+from var import Var
 
 
 def command(**args):
@@ -90,8 +90,9 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import userbot.utils
         import importlib
+
+        import userbot.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
@@ -100,8 +101,9 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         print("Successfully (re)imported " + shortname)
     else:
-        import userbot.utils
         import importlib
+
+        import userbot.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
