@@ -8,12 +8,15 @@ import subprocess
 import sys
 import traceback
 from pathlib import Path
-from time import gmtime, strftime
+from time import gmtime
+from time import strftime
 from traceback import format_exc
 
 from telethon import events
 
-from userbot import CMD_LIST, LOAD_PLUG, bot
+from userbot import bot
+from userbot import CMD_LIST
+from userbot import LOAD_PLUG
 from userbot.uniborgConfig import Config
 from var import Var
 
