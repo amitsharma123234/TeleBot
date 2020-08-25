@@ -105,7 +105,7 @@ def load_module(shortname):
         print("Successfully (re)imported " + shortname)
     else:
         import importlib
-
+        from userbot import bot
         import userbot.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
