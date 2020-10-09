@@ -318,7 +318,7 @@ def sudo_cmd(pattern=None, **args):
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
     file_test = file_test.stem.replace(".py", "")
-    allow_sudo = True
+    allow_sudo = args.get("allow_sudo", False)
 
     # get the pattern from the decorator
     if pattern is not None:
@@ -339,7 +339,7 @@ def sudo_cmd(pattern=None, **args):
         args["from_users"] = list(Var.SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
-        del args["allow_sudo"]
+        del args["a
 
     # error handling condition check
     elif "incoming" in args and not args["incoming"]:
