@@ -1,21 +1,19 @@
 {
- "name": "TeleBot - UserBot",
- "description": "An advanced Telethon Userbot, from @TeleBotSupport",
- "logo": "https://telegra.ph/file/34b810002e7a3ee86a21e.png",
+ "name": "DeepTeleBot - UserBot",
+ "description": "An advanced Telethon Userbot, from @DeepTeleBotSupport",
+ "logo": "https://telegra.ph/DEEPTeleBotLogo-10-27",
  "keywords": [
   "telegram",
   "userbot",
-  "TeleBot",
+  "DeepTeleBot",
   "modular",
   "productivity"
  ],
- "repository": "https://github.com/xditya/TeleBot/",
- "website": "https://xditya.gitbook.io/telebot/",
- "success_url": "https://t.me/TeleBotHelp/13",
+ "repository": "https://github.com/Lovedeep-ViRk/DeepTeleBot/",
  "stack": "container",
  "env": {
   "ENV": {
-   "description": "Setting this to ANYTHING will enable heroku.",
+   "description": "Setting this to ANYTHING will enable heroku For DeepTeleBot.",
    "value": "ANYTHING"
   },
   "TEMP_DOWNLOAD_DIRECTORY": {
@@ -26,14 +24,17 @@
   "APP_ID": {
    "description": "Get this value from my.telegram.org! Please do not steal",
    "value": ""
+   "required": true
   },
   "API_HASH": {
    "description": "Get this value from my.telegram.org! Please do not steal",
    "value": ""
+   "required": true
   },
   "STRING_SESSION": {
    "description": "Get this value by running python3 telesetup.py locally or https://telebot-sessionstring-generator.xditya.repl.run online.",
    "value": ""
+   "required": true
   },  
   "CUSTOM_PMPERMIT": {
    "description": "The message that appears when someone PM's you. Leave it as such for default message.",
@@ -55,7 +56,7 @@
    "required": false
   },  
   "GIT_REPO_NAME": {
-   "description": "Your repo name Example: xditya/TeleBot, but GITHUB_ACCESS_TOKEN must be setup first.",
+   "description": "Your repo name Example: Lovedeep-ViRk/DeepTeleBot, but GITHUB_ACCESS_TOKEN must be setup first.",
    "value": "",
    "required": false
   },
@@ -85,12 +86,12 @@
    "required": false
   },
   "PRIVATE_GROUP_BOT_API_ID": {
-   "description": "Must read https://telegra.ph/TeleBot-Setup-06-06 for knowing how to get the value. Required for pmpermit.",
+   "description": "Must read https://telegra.ph/DeepTeleBot-Setup-10-26 for knowing how to get the value. Required for pmpermit.",
    "value": "",
    "required": true
   },
   "PRIVATE_GROUP_ID": {
-   "description": "Same value as PRIVATE_GROUP_BOT_API_ID. Must read https://telegra.ph/TeleBot-Setup-06-06 for knowing how to get the value. Required for pmpermit.",
+   "description": "Same value as PRIVATE_GROUP_BOT_API_ID. Must read https://telegra.ph/DeepTeleBot-Setup-10-26 for knowing how to get the value. Required for pmpermit.",
    "value": "",
    "required": true
   },
@@ -141,8 +142,8 @@
   },
   "TZ": {
    "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-   "value": "",
-   "required": false
+   "value": "Asia/Kolkata",
+   "required": true
   }
  },
  "addons": [{
