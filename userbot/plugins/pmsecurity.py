@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    DeepTeleBot - UserBot
+#    Copyright (C) 2020 DeepTeleBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -29,7 +29,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/572a121f67b75f97c7a6a.jpg"
+    else "https://telegra.ph/DEEPTeleBotLogo-10-27"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -37,12 +37,12 @@ myid = bot.uid
 MESAG = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
-    else "`TeleBot PM security! Please wait for me to approve you. 😊"
+    else "`DeepTeleBot PM security! Please wait for me to approve you. 😊"
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot User"
 USER_BOT_WARN_ZERO = "`I had warned you not to spam. Now you have been blocked and reported until further notice.`\n\n**GoodBye!** "
 USER_BOT_NO_WARN = (
-    "**PM Security ~ TeleBot**\n\nNice to see you here, but  "
+    "**PM Security ~ DeepTeleBot**\n\nNice to see you here, but  "
     "[{}](tg://user?id={}) is currently unavailable.\nThis is an automated message.\n\n"
     "{}\n\n**You have** `{}/{}` **warnings...**"
     "\n\n   ~ Thank You."
