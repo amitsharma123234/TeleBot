@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    DeepTeleBot - UserBot
+#    Copyright (C) 2020 DeepTeleBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -33,7 +33,7 @@ from userbot import ALIVE_NAME
 from userbot.telebotConfig import Var
 from userbot import bot
 
-DEF = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot"
+DEF = str(ALIVE_NAME) if ALIVE_NAME else "DeepTeleBot"
 
 
 @tgbot.on(events.NewMessage(pattern="^/start"))
@@ -42,7 +42,7 @@ async def thisfn(event):
         event.chat_id,
         message=started,
         buttons=[
-            [Button.url("Repository", "https://github.com/xditya/TeleBot/")]
+            [Button.url("Repository", "https://github.com/Lovedeep-ViRk/DeepTeleBot/")]
         ]
     )
 
@@ -54,7 +54,7 @@ async def thisfn(event):
         message=helpmefast,
         link_preview=False,
         buttons=[
-            [Button.url("TeleBot", "https://t.me/TeleBotSupport")]
+            [Button.url("DeepTeleBot", "https://t.me/DeepTeleBotSupport")]
         ]
     )
 
@@ -65,7 +65,7 @@ async def thisfn(event):
         event.chat_id,
         message=forping,
         buttons=[
-            [Button.url("Deploy", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot")]
+            [Button.url("Deploy", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot&template=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot")]
         ]
     )
 
@@ -108,7 +108,7 @@ async def _(event):
     except Exception as e:
         dc_id = "Need a Profile Picture to check **this**"
         str(e)
-    caption = """Extracted Userdata From TeleBot's DATABASE
+    caption = """Extracted Userdata From DeepTeleBot's DATABASE
 ID: <code>{}</code>
 Target's Name: <a href='tg://user?id={}'>{}</a>
 Bio: {}
@@ -142,7 +142,7 @@ No. of Common Groups : {}
         force_document=False,
         silent=True,
         buttons=[
-            [Button.url("More", "https://t.me/TeleBotSupport")]
+            [Button.url("More", "https://t.me/DeepTeleBotSupport")]
         ]
     )
 
@@ -226,7 +226,7 @@ async def _(event):
     try:
         translated = translator.translate(text, dest=lan)
         after_tr_text = translated.text
-        output_str = """**Translated by TeleBot**\nFrom {} to {}
+        output_str = """**Translated by DeepTeleBot**\nFrom {} to {}
 {}""".format(
             translated.src,
             lan,
@@ -236,7 +236,7 @@ async def _(event):
             event.chat_id,
             message=output_str,
             buttons=[
-                [Button.url("More", "https://t.me/TeleBotSupport")]
+                [Button.url("More", "https://t.me/DeepTeleBotSupport")]
             ]
         )
     except Exception as exc:
@@ -245,7 +245,7 @@ async def _(event):
             event.chat_id,
             message=xx,
             buttons=[
-                [Button.url("More", "https://t.me/TeleBotSupport")]
+                [Button.url("More", "https://t.me/DeepTeleBotSupport")]
             ]
         )
 
@@ -265,7 +265,7 @@ async def _(event):
                 event.chat_id,
                 message=tosend,
                 buttons=[
-                    [Button.url("More", "https://t.me/TeleBotSupport")]
+                    [Button.url("More", "https://t.me/DeepTeleBotSupport")]
                 ]
             )
         else:
@@ -275,7 +275,7 @@ async def _(event):
                 event.chat_id,
                 message=sendit,
                 buttons=[
-                    [Button.url("More", "https://t.me/TeleBotSupport")]
+                    [Button.url("More", "https://t.me/DeepTeleBotSupport")]
                 ]
             )
     else:
@@ -284,7 +284,7 @@ async def _(event):
             event.chat_id,
             message=kek,
             buttons=[
-                [Button.url("More", "https://t.me/TeleBotSupport")]
+                [Button.url("More", "https://t.me/DeepTeleBotSupport")]
             ]
         )
 
@@ -352,7 +352,7 @@ async def dyno_usage(dyno):
     else:
         resp = f"This option is available only for my master, {DEF}!"
         return await tgbot.send_message(dyno.chat_id, message=resp, buttons=[
-            [Button.url("Deploy Your TeleBot", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot")]
+            [Button.url("Deploy Your DeepTeleBot", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot&template=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot")]
         ])
 
 
@@ -370,12 +370,12 @@ async def _(givelogs):
             reply_to=givelogs.id,
             caption="[Heroku] TeleBot Logs",
             buttons=[
-                [Button.url("Crashed?", "t.me/TeleBotHelpChat")]
+                [Button.url("Crashed?", "t.me/DeepTeleBotHelpChat")]
             ])
     else:
         resp = f"This option is available only for my master, {DEF}!"
         await tgbot.send_message(givelogs.chat_id, message=resp, buttons=[
-            [Button.url("Deploy Your TeleBot", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot")]
+            [Button.url("Deploy Your DeepTeleBot", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot&template=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot")]
         ])
     await asyncio.sleep(5)
     return os.remove('logs.txt')
