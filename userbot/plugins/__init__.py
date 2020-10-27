@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    DeepTeleBot - UserBot
+#    Copyright (C) 2020 DeepTeleBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -56,11 +56,11 @@ else:
 
 TELEUSER = str(ALIVE_NAME) if ALIVE_NAME else "@TeleBotSupport"
 
-tele = f"TeleBot Version: {telever}\n"
+tele = f"DeepTeleBot Version: {telever}\n"
 tele += f"Log Group: {log}\n"
 tele += f"Assistant Bot: {bots}\n"
 tele += f"Lydia: {lyd}\n"
 tele += f"Sudo: {sudo}\n"
 tele += f"PMSecurity: {pm}\n"
-tele += f"\nVisit @TeleBotSupport for assistance.\n"
+tele += f"\nVisit @DeepTeleBotSupport for assistance.\n"
 telestats = f"{tele}"
