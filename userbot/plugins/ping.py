@@ -1,5 +1,5 @@
 # special thanks to Sur_vivor
-# Re-written for TeleBot by @its_xditya
+# Re-written for TeleBot by @Lovedeep_ViRk
 
 import time
 from datetime import datetime
