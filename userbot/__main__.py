@@ -19,7 +19,7 @@ async def add_bot(bot_token):
 
 
 async def startup_log_all_done():
-    await bot.send_message(TELE, f"**TeleBot has been deployed,** @{BOTNAME} **has been set up.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\n__Do add** @{BOTNAME} **to this group and make it admin for enabling all the features of TeleBot**__")
+    await bot.send_message(TELE, f"**DeepTeleBot has been deployed,** @{BOTNAME} **has been set up.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\n__Do add** @{BOTNAME} **to this group and make it admin for enabling all the features of TeleBot**__")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
@@ -34,7 +34,7 @@ else:
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished, no errors")
-        print("Starting Userbot")
+        print("Starting DeepTeleBot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
@@ -48,7 +48,7 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-print("TeleBot has been deployed! ")
+print("DeepTeleBot has been deployed! ")
 
 print("Setting up TGBot")
 
@@ -61,7 +61,7 @@ for name in files:
         start_mybot(shortname.replace(".py", ""))
 
 print("TGBot has been set up!")
-print("TeleBot has been fully deployed! Do Visit @TeleBotSupport")
+print("TeleBot has been fully deployed! Do Visit @DeepTeleBotSupport")
 bot.loop.run_until_complete(startup_log_all_done())
 
 if len(argv) not in (1, 3, 4):
