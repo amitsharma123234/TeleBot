@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    DeepTeleBot - UserBot
+#    Copyright (C) 2020 DeepTeleBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
 from userbot import ALIVE_NAME, CMD_LIST
 from userbot.utils import admin_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DeepTeleBot User"
 
 
 @telebot.on(admin_cmd(pattern="help ?(.*)"))
@@ -53,12 +53,12 @@ async def cmd_list(event):
                 for i in CMD_LIST[input_str]:
                     string += "    " + i
                     string += "\n"
-                string += "\n**© @TeleBotSupport**"
+                string += "\n**© @DeepTeleBotSupport**"
                 await event.edit(string)
             else:
                 await event.edit(input_str + " is not a valid plugin!")
         else:
-            help_string = f"TeleBot Help Menu"
+            help_string = f"DeepTeleBot Help Menu"
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername, help_string
             )
