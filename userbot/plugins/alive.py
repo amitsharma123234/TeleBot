@@ -1,4 +1,4 @@
-# For @TeleBotHelp
+# For @DeepTeleBotSUPPORT
 """Check if your userbot is working."""
 import os
 import time
@@ -65,16 +65,16 @@ async def amireallyalive(alive):
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        tele = f"**Welcome To TeleBot **\n\n"
+        tele = f"**Welcome To DeepTeleBot **\n\n"
         tele += "`Hey! I'm alive. All systems online and functioning normally!`\n\n"
         tele += "` 🔸 Telethon version:` **1.17**\n` 🔹 Python:` **3.8.3**\n"
-        tele += f"` 🔸 TeleBot Version:` **{telever}**\n"
-        tele += "` 🔹 More Info:` **@TeleBotSupport**\n"
+        tele += f"` 🔸 DeepTeleBot Version:` **{telever}**\n"
+        tele += "` 🔹 More Info:` **@DeepTeleBotSupport**\n"
         tele += f"` 🔸 Sudo :` **{sudo}**\n"
         tele += f"` 🔹 TeleBot Uptime:` **{uptime}**\n"
         tele += "` 🔸 Database Status:` **All OK 👌!**\n"
         tele += f"` 🔹 My pro owner` : **[{DEFAULTUSER}](tg://user?id={myid})**\n\n"
-        tele += "    [✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)"
+        tele += "    [✨ GitHub Repository ✨](https://github.com/Lovedeep-ViRk/DeepTeleBot)"
 
         await alive.get_chat()
         await alive.delete()
@@ -82,7 +82,7 @@ async def amireallyalive(alive):
         await borg.send_file(alive.chat_id, ALV_PIC, caption=tele, link_preview=False)
         await alive.delete()
         return
-    req = requests.get("https://telegra.ph/file/0670190de8e3bddea6d95.png")
+    req = requests.get("https://telegra.ph/DEEPTeleBotLogo-10-27")
     req.raise_for_status()
     file = BytesIO(req.content)
     file.seek(0)
@@ -93,16 +93,16 @@ async def amireallyalive(alive):
         sticker.seek(0)
         await borg.send_message(
             alive.chat_id,
-            f"**Welcome To TeleBot **\n\n"
+            f"**Welcome To DeepTeleBot **\n\n"
             "`Hey! I'm alive. All systems online and functioning normally!`\n\n"
             "` 🔸 Telethon version:` **1.17**\n` 🔹 Python:` **3.8.3**\n"
-            f"` 🔸 TeleBot Version:` **{telever}**\n"
-            "` 🔹 More Info:` **@TeleBotSupport**\n"
+            f"` 🔸 DeepTeleBot Version:` **{telever}**\n"
+            "` 🔹 More Info:` **@DeepTeleBotSupport**\n"
             f"` 🔸 Sudo :` **{sudo}**\n"
-            f"` 🔹 TeleBot Uptime:` **{uptime}**\n"
+            f"` 🔹 DeepTeleBot Uptime:` **{uptime}**\n"
             "` 🔸 Database Status:` **All OK 👌!**\n"
             f"` 🔹 My pro owner` : **[{DEFAULTUSER}](tg://user?id={myid})**\n\n"
-            "    [✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)",
+            "    [✨ GitHub Repository ✨](https://github.com/Lovedeep-ViRk/DeepTeleBot)",
             link_preview=False,
         )
         await borg.send_file(alive.chat_id, file=sticker)
