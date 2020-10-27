@@ -1,16 +1,10 @@
-# TeleBot - Telegram UserBot
+## 👑Creator👨‍🔧
 
-# <p align="left"><a href="https://github.com/xditya/TeleBot"><img src="https://github-readme-stats.vercel.app/api/pin?username=xditya&show_icons=true&theme=dark&hide_border=true&repo=TeleBot"></a></p><p align="centre"><a href="https://t.me/TeleBotHelpChat"> <img src="https://img.shields.io/badge/telegram-Support_Group-blue?style=social&logo=telegram" alt="Support" /></a><a href="https://github.com/xditya/TeleBot/stargazers"><img src="https://img.shields.io/github/stars/xditya/TeleBot?style=social"></a><a href="https://github.com/xditya/TeleBot/fork"><img src="https://img.shields.io/github/forks/xditya/TeleBot?label=Fork&logoColor=blue&style=social"></a>	<a href="https://github.com/xditya/TeleBot"><img src="https://img.shields.io/github/last-commit/xditya/TeleBot?style=flat-square"></a></p>
-    
-## Video Tutorial on deploying
+*LovedeepViRk
 
-Click the below button to watch the video tutorial on deploying
+# DeepTeleBot - Telegram UserBot
 
-<a href="https://youtu.be/aPU334icQSM"><img src="https://img.shields.io/badge/How%20To%20Deploy-LATEST-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/aPU334icQSM"><img src="https://img.shields.io/youtube/views/aPU334icQSM?style=social">
-    
-<a href="https://youtu.be/XmvdDHiIDb4"><img src="https://img.shields.io/badge/How%20To%20Deploy-OLD-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/XmvdDHiIDb4"><img src="https://img.shields.io/youtube/views/XmvdDHiIDb4?style=social">
+# <p align="left"><a href="https://github.com/Lovedeep-ViRk/DeepTeleBot"><img src="https://github-readme-stats.vercel.app/api/pin?username=Lovedeep-ViRk&show_icons=true&theme=dark&hide_border=true&repo=DeepTeleBot"></a></p><p align="centre"><a href="https://t.me/DeepTeleBotHelpChat"> <img src="https://img.shields.io/badge/telegram-Support_Group-blue?style=social&logo=telegram" alt="Support" /></a><a href="https://github.com/Lovedeep-ViRk/DeepTeleBot/stargazers"><img src="https://img.shields.io/github/stars/Lovedeep-ViRk/DeepTeleBot?style=social"></a><a href="https://github.com/Lovedeep-ViRk/DeepTeleBot/fork"><img src="https://img.shields.io/github/forks/Lovedeep-ViRk/DeepTeleBot?label=Fork&logoColor=blue&style=social"></a>	<a href="https://github.com/Lovedeep-ViRk/DeepTeleBot"><img src="https://img.shields.io/github/last-commit/Lovedeep-ViRk/DeepTeleBot?style=flat-square"></a></p>
     
 ## The Easier Way to install
 
