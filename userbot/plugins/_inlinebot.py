@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    DeepTeleBot - UserBot
+#    Copyright (C) 2020 DeepTeleBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -26,12 +26,12 @@ from userbot import ALIVE_NAME, CMD_LIST, CUSTOM_PMPERMIT, bot
 from userbot.plugins import telestats
 from userbot.telebotConfig import Var
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DeepTeleBot User"
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/572a121f67b75f97c7a6a.jpg"
+    else "https://telegra.ph/DEEPTeleBotLogo-10-27"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -40,12 +40,12 @@ LOG_GP = Var.PRIVATE_GROUP_ID
 MESAG = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
-    else "`TeleBot PM security! Please wait for me to approve you. 😊"
+    else "`DeepTeleBot PM security! Please wait for me to approve you. 😊"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DeepTeleBot User"
 USER_BOT_WARN_ZERO = "`I had warned you not to spam. Now you have been blocked and reported until further notice.`\n\n**GoodBye!** "
 USER_BOT_NO_WARN = (
-    f"**PM Security ~ TeleBot**\n\nNice to see you here, but  "
+    f"**PM Security ~ DeepTeleBot**\n\nNice to see you here, but  "
     "[{}](tg://user?id={}) is currently unavailable.\nThis is an automated message.\n\n"
     "{}\n"
     "\nPlease choose why you are here, from the available options\n\n            ~ Thank You."
@@ -63,7 +63,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             thelink = f"https://t.me/{yourbot}?start=logs"
             result = builder.article(
                 title="Help-Menu",
-                text=f"This is the help menu for {DEFAULTUSER}\n\nProvided by [TeleBot](https://github.com/xditya/TeleBot)",
+                text=f"This is the help menu for {DEFAULTUSER}\n\nProvided by [DeepTeleBot](https://github.com/Lovedeep-ViRk/DeepTeleBot)",
                 buttons=[
                     [custom.Button.inline("All commands", data="helpmenu")],
                     [
@@ -71,7 +71,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                         custom.Button.inline("Close", data="close"),
                         custom.Button.inline("Stats", data="statcheck"),
                     ],
-                    [Button.url("Support", "t.me/TeleBotSupport")],
+                    [Button.url("Support", "t.me/DeepTeleBotSupport")],
                 ],
                 link_preview=False,
             )
@@ -80,22 +80,22 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             buttons = paginate_help(0, CMD_LIST, "helpme")
             x = len(CMD_LIST)
             result = builder.article(
-                "© TeleBot Help",
-                text=f"`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[TeleBot](https://xditya.gitbook.io/telebot/)**\n\nCurrently Loaded Plugins: {x}",
+                "© DeepTeleBot Help",
+                text=f"`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[https://t.me/DeepTeleBotHelpChat/)**\n\nCurrently Loaded Plugins: {x}",
                 buttons=buttons,
                 link_preview=False,
             )
         elif event.query.user_id == bot.uid and query == "stats":
             result = builder.article(
                 title="Stats",
-                text=f"**TeleBot Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n(c) @TeleBotSupport",
+                text=f"**DeepTeleBot Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n(c) @DeepTeleBotSupport",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
-                    [Button.url("Repo", "https://github.com/xditya/TeleBot")],
+                    [Button.url("Repo", "https://github.com/Lovedeep-ViRk/DeepTeleBot")],
                     [
                         Button.url(
                             "Deploy Now!",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot&template=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot",
                         ),
                         custom.Button.inline("Close", data="close"),
                     ],
@@ -121,36 +121,36 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"TeleBot - Telegram Userbot.",
+                text=f"DeepTeleBot - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("Repo", "https://github.com/xditya/TeleBot"),
+                        Button.url("Repo", "https://github.com/Lovedeep-ViRk/DeepTeleBot"),
                         Button.url(
                             "Deploy",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot&template=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot",
                         ),
                     ],
-                    [Button.url("Support", "https://t.me/TeleBotSupport")],
+                    [Button.url("Support", "https://t.me/DeepTeleBotSupport")],
                 ],
             )
         else:
             result = builder.article(
                 "Source Code",
-                text="**Welcome to TeleBot**\n\n`Click below buttons for more`",
+                text="**Welcome to DeepTeleBot**\n\n`Click below buttons for more`",
                 buttons=[
-                    [custom.Button.url("Creator👨‍🦱", "https://t.me/its_xditya")],
+                    [custom.Button.url("Creator👨‍🦱", "https://t.me/Lovedeep_ViRk")],
                     [
                         custom.Button.url(
-                            "👨‍💻Source Code‍💻", "https://github.com/xditya/TeleBot"
+                            "👨‍🔧Source Code‍💻", "https://github.com/Lovedeep-ViRk/DeepTeleBot"
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
-                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FLovedeep-ViRk%2FDeepTeleBot",
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "Updates and Support Group↗️", "https://t.me/TeleBotSupport"
+                            "Updates and Support Group👨‍🔧", "https://t.me/DeepTeleBotSupport"
                         )
                     ],
                 ],
@@ -171,7 +171,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.edit(buttons=buttons)
         else:
             reply_pop_up_alert = (
-                "Please get your own Userbot from @TeleBotHelp , and don't use mine!"
+                "Please get your own Userbot from @DeepTeleBotHelpChat , and don't use mine!"
             )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -187,7 +187,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await helpermenu[0].click(event.chat_id)
         else:
             reply_pop_up_alert = (
-                "Please get your own Userbot from @TeleBotHelp , and don't use mine!"
+                "Please get your own Userbot from @DeepTeleBotHelpChat , and don't use mine!"
             )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -198,7 +198,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [TeleBot](t.me/TeleBotSupport)"
+                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [DeepTeleBot](t.me/DeepTeleBotSupport)"
             )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"req")))
@@ -279,7 +279,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid:
             await event.edit("Menu Closed!")
         else:
-            reply_pop_up_alert = "Please get your own userbot from @TeleBotSupport "
+            reply_pop_up_alert = "Please get your own userbot from @DeepTeleBotSupport "
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
@@ -324,7 +324,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             else:
                 reply_pop_up_alert = help_string
             reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-                © Telebot".format(
+                © DeepTelebot".format(
                 plugin_name
             )
             try:
