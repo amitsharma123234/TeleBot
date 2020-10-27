@@ -8,10 +8,10 @@
     
 ## The Easier Way to install
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xditya/TeleBot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lovedeep-ViRk/DeepTeleBot)
 
 ## Support
-Join [TeleBot Support group](https://t.me/TeleBotSupport) for updates and new plugin suggestions.
+Join [DeepTeleBot Support group](https://t.me/DeepTeleBotSupport) for updates and new plugin suggestions.
 Do fork and star the repo 
 
 ### Session String 
@@ -21,8 +21,8 @@ Do fork and star the repo
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/xditya/TeleBot
-cd TeleBot
+git clone https://github.com/Lovedeep-ViRk/DeepTeleBot
+cd DeepTeleBot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
@@ -43,14 +43,6 @@ class Development(Var):
   APP_ID = 6
   API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
 ```
-
-**Heroku Configuration**
-Simply just leave the Config as it is.
-
-**Local Configuration**
-Check [Line 111](https://github.com/Total-Noob-69/X-tra-Telegram/blob/master/userbot/uniborgConfig.py#L111) and start adding your vars there.
-Fortunately there are no Mandatory vars for the UniBorg Support Config.
-
 ## Mandatory Vars
 
 - Only two of the environment variables are mandatory.
