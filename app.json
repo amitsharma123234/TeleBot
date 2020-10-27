@@ -24,17 +24,14 @@
   "APP_ID": {
    "description": "Get this value from my.telegram.org! Please do not steal",
    "value": ""
-   "required": true
   },
   "API_HASH": {
    "description": "Get this value from my.telegram.org! Please do not steal",
    "value": ""
-   "required": true
   },
   "STRING_SESSION": {
    "description": "Get this value by running python3 telesetup.py locally or https://telebot-sessionstring-generator.xditya.repl.run online.",
    "value": ""
-   "required": true
   },  
   "CUSTOM_PMPERMIT": {
    "description": "The message that appears when someone PM's you. Leave it as such for default message.",
@@ -143,7 +140,7 @@
   "TZ": {
    "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
    "value": "Asia/Kolkata",
-   "required": true
+   "required": false
   }
  },
  "addons": [{
